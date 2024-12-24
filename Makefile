@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g
-INCLUDES = C:/GL/SDLbin/include
+INCLUDES = /usr/include/
 
-L_PATH = C:/GL/SDLbin/lib/x86
-L_LIBS = -lSDL2main -lSDL2
+L_PATH = /usr/lib/
+L_LIBS = -lSDL2main -lSDL2 -lm
 
 SRC_DIR = src
 OBJ_DIR = $(SRC_DIR)/obj
@@ -12,7 +12,7 @@ SRCS = $(wildcard $(SRC_DIR)/*.c)
 HDRS = $(wildcard $(SRC_DIR)/*.h)
 OBJS = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRCS))
 
-TARGET = tdg
+TARGET = myre
 
 all: $(OBJ_DIR) $(TARGET)
 

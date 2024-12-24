@@ -1,21 +1,21 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#include "C:/GL/SDLbin/include/SDL.h"
+#include "/usr/include/SDL2/SDL.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
 #include <string.h>
 
-#define MAIN_DISPLAY (2)
-#define SECONDARY_DISPLAY (1)
+#define MAIN_DISPLAY (1)
+#define SECONDARY_DISPLAY (2)
 
-#define DISPLAY_WIDTH (2560)
-#define DISPLAY_HEIGHT (1440)
+#define DISPLAY_WIDTH (800)
+#define DISPLAY_HEIGHT (440)
 
-#define SCREEN_WIDTH (2560)
-#define SCREEN_HEIGHT (1440)
+#define SCREEN_WIDTH (800)
+#define SCREEN_HEIGHT (440)
 
 #define WINDOW_FLAGS (SDL_WINDOW_BORDERLESS || SDL_WINDOW_ALLOW_HIGHDPI)
 #define RENDERER_FLAGS (SDL_RENDERER_PRESENTVSYNC)
